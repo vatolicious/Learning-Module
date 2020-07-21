@@ -1,150 +1,119 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="https://www.w3.org/1999/xhtml"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>Example</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo layout</title>
 
-<style type="text/css">
-html, body {
-margin:0px;
-padding:0px;
-}
-
-
-
-</style>
-<!-- must have -->
-<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-<link href="universal_video_player.css" rel="stylesheet" type="text/css">
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-<script src="https://player.vimeo.com/api/player.js"></script>
-<script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
-<script src="js/universal_video_player.js" type="text/javascript"></script>
-<script src="js/screenfull.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/jquery.touchSwipe.min.js" type="text/javascript"></script>
-<!-- must have -->
-
-
-
-
-	<script>
-		jQuery(function() {
-
-			jQuery('#universal_video_player_default').universal_video_player({
-				skin: 'blackControllers',
-				width:980,
-				height:424,
-				origThumbImgW:240,
-				origThumbImgH:128,
-				playlistRecordHeight:128,
-				playlistRecordPadding:0,
-				playlistWidth: 240,
-				playlistBgColor:'#7f4837',
-				playlistRecordBgOffColor:'#ffcc00',
-				playlistRecordBgOnColor:'',
-				playlistRecordBgOffImgOpacity:45,
-				playlistRecordBgOnImgOpacity:100,
-				borderColor: '#FFFFFF',
-				controlsBgFullScreenColor:'#FFFFFF',
-
-				playlistRecordShowImg:true,
-				playlistRecordShowTitle:false,
-				playlistRecordShowDesc:false,
-
-				categoryRecordBgOffColor:'#000000',
-				categoryRecordBgOnColor:'#252525',
-				categoryRecordTextOffColor:'#4c4c4c',
-				categoryRecordTextOnColor:'#ffcc00',
-				categoryRecordBottomBorderOffColor:'#7f4837',
-				categoryRecordBottomBorderOnColor:'#7f4837',
-
-				firstCateg:'',
-				selectedCategBg: 'transparent',
-				selectedCategOffColor: '#707070',
-				selectedCategOnColor: '#000000',
-
-				searchAreaBg: 'transparent',
-				searchInputText:'search...',
-				searchInputBg:'#cccccc',
-				searchInputBorderColor:'#FFFFFF',
-				searchInputTextColor:'#333333',
-
-				bufferEmptyColor: '#929292',
-				bufferFullColor: '#333333',
-				seekbarColor: '#ffcc00',
-				volumeOffColor: '#ffffff',
-				volumeOnColor: '#707070',
-
-				topTitleColor:'#707070',
-				timerColor:'#707070',
-
-				playlistScrollerBgColorOFF:'#cccccc',
-				playlistScrollerBgColorON:'#ffcc00',
-
-				playButColorOff:"#ffcc00",
-				playButColorOn:"#ffcc00"
-
-			});
-
-
-		});
-
-
-	</script>
-
-
+	<link rel="stylesheet" href="css/style.css">
 
 </head>
+<body>
 
-<body bgcolor="#828282" style="margin:10px;">
-            <div id="universal_video_player_default" style="display:none;">
-                <!-- IMAGES -->
-                <ul class="universal_video_player_list">
-                	<li data-bottom-thumb="images/only_img/thumbs/07_img.jpg"
-                    	data-title="Dracula Untold"
-                        data-desc="The origin story of the man who becomes Dracula."
-                        data-youtube="hZFZxEnB7ws"
-                        data-category="ALL CATEGORIES;Action;Drama;Crime;Fantasy;Adventure">
-                    </li>
-                    <li data-bottom-thumb="images/only_img/thumbs/03_img.jpg"
-                    	data-title="Boyhood"
-                        data-desc="The life of a young man, Mason, from age 5 to age 18."
-                        data-youtube="ut_hrexXWC8"
-                        data-category="ALL CATEGORIES;Action;Adventure">
-                    </li>
-                    <li data-bottom-thumb="images/only_img/thumbs/04_img.jpg"
-                        data-title="Unbroken"
-                        data-desc="A chronicle of the life of Louis Zamperini, an Olympic runner who was taken prisoner by Japanese forces during World War II."
-                        data-youtube="0DrBTm5VV70"
-                        data-category="ALL CATEGORIES;Adventure;Drama;Action;Crime">
-                    </li>
-                    <li data-bottom-thumb="images/only_img/thumbs/05_img.jpg"
-                    	data-title="Addicted"
-                        data-desc="A wife is tested when she cheats on her husband, and it threatens to ruin her and her family."
-                        data-youtube="gwkgRbC4GWQ"
-                        data-category="ALL CATEGORIES;Action;Romance;Adventure;Drama">
-                    </li>
-										<li data-bottom-thumb="images/img_and_desc/thumbs/0_img.jpg"
-                   		data-title="Inception"
-                        data-desc="In a world where technology exists to enter the human mind through dream invasion."
-                        data-youtube="ovOgvGH0HTk"
-                        data-category="ALL CATEGORIES;Action;Crime;Adventure;Drama">
-                   </li>
-                   <li data-bottom-thumb="images/only_img/thumbs/02_img.jpg"
-                    	data-title="Lucy"
-                        data-desc="A woman, accidentally caught in a dark deal, turns the tables on her captors and transforms into a merciless warrior"
-                        data-youtube="W3iWKZfbCXI"
-                        data-category="ALL CATEGORIES;Action;Crime;Sci-Fi">
-                    </li>
+	<header class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-12" id="title">
+					<a href="index.html">Puffin<small class="hidden-sm hidden-xs">CSS grid and typography library</small></a>
+				</div>
+			</div>
+		</div>
+	</header>
 
+	<nav class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<label for="show-menu" class="show-menu">Show Menu</label>
+				<input type="checkbox" id="show-menu" role="button">
+				<ul>
+					<li class="current"><a href="index.html">Frontpage</a></li>
+					<li><a href="article.html">Article</a></li>
+					<li><a href="article-sidebar.html">Article + Sidebar</a></li>
+					<li><a href="post.html">Post</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="documentation.html">Documentation</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
-                </ul>
-           </div>
+	<div class="content">
+	
+		<div class="cover cover-image margin-bottom-md" style="background-image: url(images/cover.jpg);">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h1 class="huge text-center-md">This is Puffin.</h1>
+					</div>
+				</div>
+			</div>
+		</div>
 
+		<article class="container-fluid">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-offset-md-2 margin-bottom-lg margin-top-lg">
+						<blockquote class="margin-bottom-lg">
+							– The simple and responsive, pure CSS, grid and typography library
+						</blockquote>
+					</div>
+					<div class="col-md-4 col-sm-6 margin-bottom-lg">
+						<h5>Easy as pie</h5>
+						<p>Great structure and a good naming convention, makes it easier for you to create stunning web pages.</p>
+						<div class="col-12 gallery-item landscape" >
+							<div class="image" style="background-image: url(images/feature1.png);"></div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 margin-bottom-lg">
+						<h5>Flexible Layouts</h5>
+						<p>Create web pages for every device, in a snap! Only your imagination sets the limit of the layouts you create.</p>
+						<div class="col-12 gallery-item landscape" >
+							<div class="image" style="background-image: url(images/feature2.png);"></div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 margin-bottom-lg">
+						<h5>Clean and simple</h5>
+						<p>HTML and CSS how it was meant to be used. No dependencies or jQuery plugins required.</p>
+						<div class="col-12 gallery-item landscape" >
+							<div class="image" style="background-image: url(images/feature3.png);"></div>
+						</div>
+					</div>
 
+					<div class="clearfix hidden-sm hidden-xs"></div>
+					
+					<div class="col-md-4 col-sm-6 margin-bottom-lg">
+							<h5>Sass</h5>
+							<p>The CSS is preprocessed with Sass. You can easily modify colors, column count, font sizes etc. if you know sass.</p>
+							<div class="col-12 gallery-item landscape" >
+								<div class="image" style="background-image: url(images/feature4.png);"></div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 margin-bottom-lg">
+							<h5>Web fonts</h5>
+							<p>The standard font can be replaced by any other font by your choice, and still look great!</p>
+							<div class="col-12 gallery-item landscape" >
+								<div class="image" style="background-image: url(images/feature5.png);"></div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 margin-bottom-lg">
+							<h5>Responsive Text</h5>
+							<p>It's not only the grid that's responsive. The text also resizes as you scale the browser.</p>
+							<div class="col-12 gallery-item landscape" >
+								<div class="image" style="background-image: url(images/feature6.png);"></div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</article>
+
+	</div>
+
+	<footer class="container-fluid">
+		<div class="container">
+			<div class="col-12 text-center" id="copyright">
+			Created by <a href="http://thorecardel.dk" target="_blank" title="Web Designer">Thore Cardel</a>. All rights reserved.
+			</div>
+		</div>
+	</footer>
 
 </body>
 </html>
